@@ -3,6 +3,7 @@ import "../style/addPage.css";
 import { useState} from "react";
 import Menu from '../components/Menu';
 import axios from "axios";
+import {NavLink} from 'react-router-dom';
 
 function Add(){
 
@@ -62,7 +63,7 @@ function Add(){
                         <span>Добавить в избранное</span>
                     </div>
                     <div className="buttons">
-                        <input type="submit" className="addButton" value="Добавить" onClick={()=>handleAdd()}/>
+                        <NavLink className="addButton" to="/home" onClick={()=>handleAdd()}>Добавить</NavLink>
                         <input type="reset" className="resetButton" value="Отменить"/>
                     </div>
                 </form>
