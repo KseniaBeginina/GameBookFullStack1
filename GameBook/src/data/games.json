@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Эпичные схватки боевых магов: Лютый дебош в Адской школе",
+        "img":"https://hobbygames.ru/image/cache/hobbygames_beta/data/HobbyWorld/Shvatki_Magov/Lutiy_debosh/lutiy_debosh_00-1000x416-wm.jpg",
+        "year": 2021,
+        "type": "Вечериночные игры",
+        "language": "Русский",
+        "age": 18,
+        "playersNumberMin": 2,
+        "playersNumberMax": 6,
+        "time": 30,
+        "producer": "Hobby World",
+        "price": 1490,
+        "series": ["Эпичные схватки боевых магов: Битва на горе Черепламени","Эпичные схватки боевых магов: Переполох в хоромах страсти"],
+        "description":"супер описание крутой игры с картинкой хомяка"
+    },
+    {
+        "id": 2,
+        "name": "Манчкин",
+        "img":"https://hobbygames.ru/image/cache/hobbygames_beta/data/HobbyWorld/Munchkin/Munchkin/Munchkin00-1000x416-wm.jpg",
+        "year": 2012,
+        "type": "Вечериночные игры",
+        "language": "Русский",
+        "age": "12+",
+        "playersNumber": "3-6",
+        "time": 30,
+        "producer": "Steve Jackson Games",
+        "price": 990,
+        "series": ["Манчкин: Пупсы","Манчкин: Котэ", "Легендарный Манчкин"],
+        "description":"супер описание крутой игры с картинкой хомяка"
+    },
+    {
+        "id": 3,
+        "name": "Монополия",
+        "img":"https://hobbygames.ru/image/cache/hobbygames_beta/data/Hasbro/Monopoly/Classic/2022/HG/monopoly-1000x416-wm.jpg",
+        "year": 2022,
+        "type": "Семейные игры",
+        "language": "Русский",
+        "age": "8+",
+        "playersNumber": "2-6",
+        "time": 60,
+        "producer": "Hasbro",
+        "price": 3490,
+        "series": [],
+        "description":"супер описание крутой игры с картинкой хомяка"
+    }
+]

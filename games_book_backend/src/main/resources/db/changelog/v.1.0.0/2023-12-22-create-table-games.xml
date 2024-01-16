@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet logicalFilePath="2023-12-22-create-table-games"
+               id="2023-12-22-create-table-games" author="s.m">
+        <createTable tableName="games">
+            <column name="id" type="serial">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="id_user" type="serial">
+                <constraints nullable="false" foreignKeyName="Game_IDuser_fkey" referencedTableName="users" referencedColumnNames="id"/>
+            </column>
+            <column name="name" type="varchar(200)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="int">
+                <constraints nullable="false"/>
+            </column>
+            <column name="players" type="varchar(10)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="liked" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="varchar">
+                <constraints nullable="true"/>
+            </column>
+            <column name="img" type="varchar">
+                <constraints nullable="true"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>

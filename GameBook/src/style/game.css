@@ -1,0 +1,102 @@
+article{
+    width: 260px;
+    height: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 28px;
+    padding: 12px;
+
+    border: 0.5px solid rgba(196, 196, 196);
+    border-radius: 12px;
+    background-color: white;
+    filter: drop-shadow(0 0 0.5rem rgb(191, 191, 191));
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+img{
+    width: 160px;
+    height: auto;
+}
+
+.rightInfo{
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-right: 12px;
+}
+
+.rightAge{
+    width: 70px;
+    height: 28px;
+    margin-bottom: 10px;
+
+    background-color: rgb(106, 233, 157);
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightNum{
+    width: 70px;
+    height: 28px;
+    margin-bottom: 10px;
+
+    background-color: rgb(106, 233, 220);
+    border-radius: 14px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like{
+    position: absolute;
+    right: auto;
+    left: 0;
+    margin-left: 12px;
+}
+
+.text{
+    text-align: center;
+    margin-top: 24px;
+}
+.gameName{   
+    font-size: 18px;
+    font-weight: 600;
+}
+.gameDesc{
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+
+    width: 240px;
+}
+
+.price{
+    width: 80px;
+    height: 30px;
+    margin: 12px;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    
+    background-color: rgb(146, 199, 32);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 0px;
+}

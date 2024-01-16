@@ -1,0 +1,48 @@
+version: '3.8'
+services:
+  backend:
+    image: backend
+    build:
+      context: ./games_book_backend/.
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      - SPRING_DATASOURCE_USER=ksenia
+      - SPRING_DATASOURCE_PASSWORD=310875
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db/GameBook
+      
+  frontend:
+    image: frontend 
+    build:
+      context: ./GameBook/.
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:14.7-alpine
+    environment:
+      POSTGRES_USER: ksenia
+      PGUSER: ksenia
+      POSTGRES_PASSWORD: 310875
+      POSTGRES_DB: GameBook
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./infrastructure/db/create_db.sql:/docker-entrypoint-initdb.d/create_db.sql
+      - db-data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h db"]
+      interval: 1s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  db-data:

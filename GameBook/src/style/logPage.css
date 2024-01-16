@@ -1,0 +1,66 @@
+.logIn{
+    display: flex;
+    flex-direction: column;
+}
+
+.reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.inputSection{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+input{
+    height: 28px;
+    width: 350px;
+
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 6px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 12px;
+}
+
+.addButton{
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    width: auto;
+
+    background-color: rgba(80, 179, 119, 0.074);
+    color: rgb(27, 67, 43);
+
+    border: 2px solid rgb(94, 175, 127);
+    border-radius: 6px;
+
+}
+
+.link{
+    padding-left: 28px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.aLog{
+    color: rgb(71, 107, 179);
+}
+
+.aLog:hover{
+    background: none;
+
+    cursor: pointer;
+}
