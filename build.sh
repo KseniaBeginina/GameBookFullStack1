@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Клонирование репозитория
-git clone https://github.com/KseniaBeginina/GameBookFullStack.git
+git clone https://github.com/KseniaBeginina/GameBookFullStack1.git
 
 # Переход в каталог с проектом
 cd GameBookFullStack
